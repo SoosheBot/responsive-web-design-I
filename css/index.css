@@ -49,10 +49,13 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+*{
     box-sizing: border-box;
+    background-color:white;
+    padding:0;
+    margin:0;
+    max-width:100%;
 }
-
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -67,51 +70,60 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-* {
-    background-color: white;
-    padding: 0;
-    margin:auto;
-}
+
 
 body {
-    margin:auto;
-    max-width:100%;
-    width:60%;
-    /* border-right:350px black solid;
-    border-left: 350px black solid; */
+    margin:0;
+
 }
+
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-    padding-top:20px;
+    padding-top:1%;
 }
 
 nav a {
     display: flex;
     flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
     color: darkgray;
     text-decoration: none;
 }
 
 
-.heading-container {
-    display: flex;
-    flex-direction: row;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    justify-content: center;
+nav a:hover{
+    color:lightcoral;
 }
 
-.heading-container .heading {
+.logoContainer{
+    width:15%;
+    display:flex;
+    flex-direction:row;
+}
+
+
+.links{
+    width:60%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title .heading {
     padding-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center;
+    align-content: center; */
 }
 
 h1 {
@@ -233,5 +245,41 @@ footer .copyright {
     font-size:12px;
 }
 
+/* *****Media Query Styling ******/
+/* @media screen and (max-width:800px) {
+    header h1, header h2, header  h3{
+        text-align:center;
+    }
 
+    .logoContainer{
+        display:flex;
+        justify-content:right;
+        align-items:baseline
+    }
 
+    .titles{}
+
+    .titles div{}
+
+    #about div{}
+
+    .skillsContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    }
+}
+
+@media screen and (min-width:500px) {
+    header h1, header h2, header  h3{
+        text-align:left;
+    }
+
+    .logoContainer{
+        align-items:flex-start;
+    }
+    .links{
+
+        text-decoration:none;
+    }
+} */
