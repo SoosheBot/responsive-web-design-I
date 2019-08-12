@@ -63,8 +63,9 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 1%;
+    line-height: 100%;
+    margin-bottom: 3%;
 }
 
 
@@ -140,14 +141,6 @@ nav a:hover{
     border-bottom:1px solid black;
 }
 
-h1 {
-
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .button {
     border: 1px solid black;
     padding-left:5%;
@@ -158,44 +151,45 @@ h1 {
     display:inline-block;
 }
 
-
-.marketing-row{
-    padding-top:25px;
-    display:flex;
-    flex-direction:row;
+ .marketing{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1%;
+    justify-content: space-around;
+    margin-top:5%;
+    margin-bottom:5%;
+    
 }
 
-.marketing-column {
-    flex:1;
-    color:black;
-    font-size:16px;
-    margin-left:20px;
+.marketing .text-container {
+    width:48%;
+    padding: 0 1%;
 }
 
 .middle-img {
     display:flex;
-    padding-top:25px;
-    padding-bottom:25px;
+    padding-bottom:3%;
     width: 100%;
 }
 
-.sales-row{
-    display:flex;
-    flex-direction:row;
-    padding-bottom:30px;
+.sales{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 1%; */
+    justify-content: space-around;
+    margin-top:5%;
+    margin-bottom:5%;
+    
 }
 
-.sales-column {
-    flex:1;
-    color:black;
-    font-size:16px;
-    margin-left:20px;
+.sales .text-container {
+    width:33%;
+    padding: 0 1%;
 }
 
-hr {
-    border-top: 1px solid black;
+#sales-container{
+    border-bottom:1px solid black;
 }
-
 
 .services-header-img{
     padding-top:20px;
