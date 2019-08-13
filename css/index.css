@@ -298,8 +298,6 @@ footer .copyright {
         display:none;
     }
 
-    .middle-img{}
-
     .marketing .text-container {
         display:flex;
         flex-direction:column;
@@ -312,40 +310,3 @@ footer .copyright {
         width:100%
     }
 }
-
-/* *****Media Query Styling ******/
-/* @media screen and (max-width:800px) {
-    header h1, header h2, header  h3{
-        text-align:center;
-    }
-
-    .titles div{}
-
-    #about div{}
-
-    .skillsContainer{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    }
-}
-
-@media screen and (min-width:500px) {
-    header h1, header h2, header  h3{
-        text-align:left;
-    }
-
-    .title {
-    font-size:100%;
-    display: flex;
-    flex-direction:column;
-    text-align:center;
-    align-items: center;
-}
-
-  
-    .links{
-
-        text-decoration:none;
-    }
-} */
